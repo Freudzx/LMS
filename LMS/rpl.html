@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report and Logs</title>
+  <link rel="stylesheet" href="rpl.css">
+</head>
+<body>
+  <header class="header">
+    <h1>ADMIN</h1>
+    <div class="right-content">
+      <img src="imgs/earl.pn.jpg" alt="Profile" />
+      <div class="name">
+        <h4>Coronado, Earl David</h4>
+        <p>**** **** 1342</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="aside">
+      <ul>
+        <li><a href="user.html">Dashboard</a></li>
+        <li><a href="#">Issue & Return Management</a></li>
+        <li><a href="#">Member Management</a></li>
+        <li><a href="#">Library Staff Management</a></li>
+        <li><a href="#">Feedbacks</a></li>
+        <li class="rpl"><a href="#"><strong>Report & Logs</strong></a></li>
+        <li><a href="AdminLogin.html">Sign Out</a></li>
+      </ul>
+    </aside>
+
+    <!-- Report & Logs Content -->
+    <div class="main-content">
+      <div class="report-container">
+        <h2>Report and Logs</h2>
+
+        <!-- Filter or Search -->
+        <div class="filters">
+          <input type="text" placeholder="Search logs..." class="search-input" />
+          <button class="filter-button">Filter</button>
+        </div>
+
+        <!-- Table of Reports -->
+        <table class="report-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Type</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Error</td>
+              <td>2024-12-01</td>
+              <td>Resolved</td>
+              <td><button>View</button></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Warning</td>
+              <td>2024-12-02</td>
+              <td>Pending</td>
+              <td><button>View</button></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Info</td>
+              <td>2024-12-03</td>
+              <td>Completed</td>
+              <td><button>View</button></td>
+            </tr>
+            <!-- More rows can be added -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

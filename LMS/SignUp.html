@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="try.css">
+    <script type="text/javascript" src="main.js" defer></script>
+    <title>User Registration</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="registrationForm" action="">
+            <h3>Library Management System</h3>
+            <h1>Registration</h1>
+
+            <div class="input-box-name">
+                <input type="text" placeholder="First Name" id="firstName" class="first-name">
+                <span class="error" id="errorFirstName"></span>
+                <input type="text" placeholder="Last Name" id="lastName" class="last-name">
+                <span class="error" id="errorLastName"></span>
+            </div>
+
+            <div class="input-box">
+                <input type="email" id="email" placeholder="Email Address">
+                <span class="error" id="errorEmail"></span>
+            </div>
+
+            <div class="input-box">
+                <input type="text" id="studentNumber" placeholder="Student Number" required>
+                <span class="error" id="errorStudentNumber"></span>
+            </div>
+            
+            <div class="input-box">
+                <input type="password" placeholder="Password" id="password">
+                <span class="error" id="errorPassword"></span>
+                <i class='bx bxs-low-vision' id="eyeicon"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Confirm Password" id="confirmPassword">
+                <span class="error" id="errorConfirmPassword"></span>
+                <i class='bx bxs-low-vision' id="eyeicon-confirm"></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox" id="termsCheckbox" required> I Accept <a href="#">Terms & Conditions</a></label>
+            </div>
+            <span class="error" id="errorTerms"></span>
+
+            <button type="submit" class="button">Create Account</button>
+
+            <div class="register-link">
+                <p>
+                    Already have an account? 
+                    <a href="UserLogin.html" id="loginLink" style="color: blue; text-decoration: underline;">Login</a>
+                </p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
